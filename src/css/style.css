@@ -1,0 +1,586 @@
+
+/* Coloquei a fonte ARIAL em todo o site */
+* {
+    font-family: Arial;
+}
+
+/* Fiz o reset no body */
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* Alinhei o container do cabeçalho(header) ao centro */
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+/* Config dos itens do cabeçalho(header) */
+.container {
+    display: flex;
+    width: 990px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: #0f0e0e;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: #42b3e5;
+    padding: 15px;
+    color: #ffff;
+    transition: 1s;
+}
+
+/* Coloquei a img como backgrond */
+#banner {
+    display: flex;
+    justify-content: center;
+    font-family: Calibri;
+    background-image:url(../image/sorriso2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+/* config do texto e dos box da section */
+section .column {
+    flex-direction: column;
+}
+
+section .banner-text {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+    flex: 1;
+    
+}
+section .banner-text h1,.banner-text h2 {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0px 4px 1px #0f0e0e;
+}
+
+section .banner-text h2 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+section .banner-info {
+    display: flex;
+    height: auto;
+}
+
+section .box1, .box2, .box3 {
+    color: #ffff;
+    flex: 1;
+    padding: 30px;
+}
+
+section .box1 h1, .box2 h1, .box3 h1 {
+    font-size:25px;
+    margin: 0px;
+}
+
+section .box1 h2, .box2 h2 {
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+
+section .text-box1 {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+section .text-number-box1 {
+    font-size: 14px;
+}
+
+section .container-box{
+    display: flex;
+    justify-content: space-between ;
+}
+
+section .box-container {
+    margin: 0;
+    padding: 0;
+}
+
+section .box-container, .container-box {
+    margin: 0px;
+    margin-top: 5px;
+}
+section .text-box1, .text-number-box1 {
+    margin-top: 20px;
+}
+
+section .box1 {
+    background-color: #42b3e5;
+}
+
+section .box2 {
+    background-color: #0384ce
+}
+
+section .box3 {
+    background-color: #3156a3
+}
+
+/* config do botao dos box da section banner */
+section .readme {
+    background-color: transparent;
+    padding: 4px;
+    color: #ffff;
+    border: none;
+    border: 2px solid #ffff;
+    border-color: #ffff;
+    box-shadow: none;
+}
+
+/* config dos widgets(part das noticias e dos departamentos */
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* widgets de noticias */
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+article .widget-title-news {
+    display: flex;
+}
+
+article .date-news {
+    background-color: #0384ce;
+    color: #ffff;
+    margin-right: 3px;
+    font-size: 12px;
+    padding: 10px;
+    font-weight: normal;
+}
+
+article .coment-news {
+    background-color: #42b3e5;
+    color: #ffff;
+    font-size: 12px;
+    padding: 10px;
+    font-weight: normal;
+}
+
+article .img-news {
+    margin-top: 30px;
+}
+
+article .img-news img {
+    width: 100%;
+    height: auto;
+}
+
+article .text-news {
+    font-size: 23px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+article .title-text-news {
+    font-size: 13px;
+    font-weight: normal;
+    color: #222121;
+}
+
+section .widget {
+    display: flex;
+    margin-top: 30px;
+}
+
+section .widget-title-bar {
+    background-color: #42b3e5;
+    margin-top: 5px;
+    width: 50px;
+    height: 3px;
+}
+
+section .widget-title-text {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* config dos widgets de departamentos */
+aside .widget-title-bar {
+    background-color: #42b3e5;
+    margin-top: 5px;
+    width: 50px;
+    height: 3px;
+
+}
+
+aside .widget {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+
+
+aside .box01, .box02, .box03, .box04, .box05, .box06  {
+    background-color: #42b3e5;
+    display: inline-block;
+    margin: 30px 30px 0px 0px;
+    width: 130px;
+    height: 130px;
+}
+
+section .widget-body {
+    margin-top: 30px;
+}
+
+
+/* config da box do rodape */
+#rodape-box {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container-rodape-box {
+    display: flex;
+}
+
+footer .rodape-box1, .rodape-box2, .rodape-box3 {
+    color: #ffff;
+    flex: 1;
+    padding: 30px;
+}
+
+footer .container-rodape-box h1 {
+    font-size:25px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer .container-rodape-box h2 {
+    font-size:13px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+
+footer .rodape-box1 {
+    background-color: #42b3e5;
+}
+
+footer .rodape-box2 {
+    background-color: #0384ce;
+    
+}
+
+footer .rodape-box3 {
+    background-color: #3156a3
+    
+}
+
+footer .container-rodape-widget {
+    display: flex;
+}
+
+/* config da part de text do rodape */
+#rodape-widget {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+#rodape-widget .container-rodape-widget {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+#rodape-widget .widget1, .widget2, .widget3 {
+    flex: 1;
+}
+
+.rodape {
+    color: #ffff;
+}
+
+#rodape-widget .widget-body-rodape {
+    color: #8c8f90;
+    font-size: 15px;
+    padding: 0px 10px 10px 0px;
+}
+
+#rodape-widget .widget-text-rodape1 {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#rodape-widget span {
+    padding-left: 40px;
+}
+
+#rodape-widget .a {
+    padding-left: 49px;
+}
+
+#rodape-widget .b {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #ffff;
+}
+
+#rodape-widget .widget-rodape-icons {
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+#rodape-widget i {
+    font-size: 25px;
+    background-color: #303030;
+    padding: 5px;
+    margin-right: 3px;
+}
+
+#rodape-widget .widget-text-rodape7{
+    color: #42b3e5;
+    margin-top: 10px;
+}
+
+#rodape-widget .widget-text-container-rodape1 {
+    color: #ffff;
+    margin-top: 25px;
+}
+
+#rodape-widget .widget-text-container-rodape {
+    color: #ffff;
+    margin-top: 30px;
+}
+
+#rodape-widget .widget-text-rodape8 {
+    color: #909090;
+}
+
+.widgetflex {
+    flex-direction: column;
+}
+
+/* config do copyright */
+
+#rodape-widget .copyright-container {
+    display: flex;
+    font-size: 12px;
+    color: #5c5c5c;
+    margin-top: 30px;
+    padding: 30px;
+    border-top: 2px solid #2c2c2c;
+}
+
+#rodape-widget .copyright {
+    margin: 0;
+    padding: 0;
+    padding-top: 4px;
+}
+
+nav .menumobile {
+    display: none;
+    width: 100px;
+    height: 40px;
+    margin-top: 40;
+    margin-bottom: 40;
+    justify-content: space-around;
+    flex-direction: column;
+}
+nav .mn_line1,.mn_line2, .mn_line3 {
+    background-color: #42b3e5;
+    height: 3px;
+    margin: 5px;
+    width: 100%;
+}
+
+@media (max-width: 950px){
+    
+    .container {
+        width: 750px;
+    }
+    
+    aside .widget {
+        min-width: 200px;
+    }
+
+    nav {
+        width: 700px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        font-size: 13;
+    }
+
+}
+
+@media (max-width:700px) {
+
+
+    header .container {
+        flex-direction: row;
+    }
+
+    #banner {
+        height: auto;
+    }
+
+    section .widget {
+        flex-direction: column;
+    }
+
+    section .banner-text {
+        margin: 30px 30px 150px 30px;
+
+    }
+
+    section .banner-text h1 {
+        font-size: 50px;
+    }
+
+    section .banner-text h2{
+        font-size: 20px;
+    }
+
+    section .banner-info {
+        flex-direction: column;
+    }
+
+    section .widget {
+        margin: 25px;
+    }
+
+    .container {
+        width: 700px;
+        flex-direction: column;
+    }
+
+    #rodape-widget .container-rodape-widget {
+        padding: 30px 40px 0px 20px;
+        flex-direction: column;
+    }
+
+    .container-rodape-widget .widget1, .widget2, .widget3 {
+        margin-bottom: 50px;
+    }
+
+    footer .container-rodape-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .menu {
+        width: 150px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 40px;
+        width: 100%;
+        background-color: #ffff;
+        left: 0;
+    }
+
+    nav .menumobile {
+        display: flex;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
